@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.superslide.SuperSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ssl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slide_bakground_color"
+    android:fitsSystemWindows="true"
+    android:foreground="@color/transprent"
+    app:ssl_alphaEnable="true"
+    app:ssl_multiPointer="true"
+    app:ssl_overflowParent="false"
+    app:ssl_singleDirection="true"
+    app:ssl_slideEdge="left"
+    app:ssl_statusBarBackground="@color/color_BDBDBD"
+    app:ssl_thresholdRate="0.3">
+
+    <com.example.superslide.SuperSlideLayout
+        android:id="@+id/ssl_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/slide_bakground_color"
+        android:foreground="@color/whiteColor"
+        app:ssl_alphaEnable="true"
+        app:ssl_multiPointer="true"
+        android:fitsSystemWindows="true"
+        app:ssl_overflowParent="false"
+        app:ssl_singleDirection="true"
+        app:ssl_slideEdge="top"
+        app:ssl_thresholdRate="0.3">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="精彩评论"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/slide_bakground_color"></View>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </com.example.superslide.SuperSlideLayout>
+
+</com.example.superslide.SuperSlideLayout>

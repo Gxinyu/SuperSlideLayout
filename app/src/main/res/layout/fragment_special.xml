@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right|left"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上下左滑动的浏览图集" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="半屏评论列表" />
+
+    <Button
+        android:id="@+id/btn_full_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全屏对话框" />
+
+    <Button
+        android:id="@+id/btn_share_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表共享过渡动画" />
+
+
+    <ImageView
+        android:id="@+id/btn_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/image2"
+        android:transitionName="single" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="单一图片（单击上图）" />
+
+    <ImageView
+        android:id="@+id/btn_single_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/image3"
+        android:transitionName="video" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="视频详情页（单击上图）" />
+
+
+</LinearLayout>

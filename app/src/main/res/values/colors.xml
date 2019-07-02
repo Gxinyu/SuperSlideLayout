@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF0000</color>
+
+    <color name="transprent">#00000000</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="blackColor">#000000</color>
+    <color name="slide_bakground_color">#66000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="cbchot_666666">#666666</color>
+    <color name="cbchot_c1c1c2">#c1c1c2</color>
+    <color name="cbchot_242134">#242134</color>
+    <color name="cbchot_191A2C">#191A2C</color>
+    <color name="cbchot_DCDCDC">#DCDCDC</color>
+    <color name="cbchot_2A90D7">#2A90D7</color>
+
+    <color name="color_BDBDBD">#BDBDBD</color>
+
+</resources>

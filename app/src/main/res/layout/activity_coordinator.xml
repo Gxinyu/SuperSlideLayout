@@ -1,0 +1,111 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/transprent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="@android:color/transparent"
+            app:title="秦时明月"
+            app:titleEnabled="true">
+
+            <!-- 可伸缩背景图布局文件 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/image1"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+            </ImageView>
+
+            <!--设置pin可保持位置不变-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <!--设置pin可保持位置不变-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_share"
+                app:layout_collapseMode="pin" />
+
+            <!--不设置随着滚动-->
+            <TextView
+                android:id="@+id/tv_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:padding="7dp"
+                android:text="夜尽天明"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <!--跟随滚动并且不折叠-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/cbchot_242134"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="appbar之内collap之外"
+                android:textColor="@color/whiteColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_red"
+                android:paddingBottom="4dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="4dp"
+                android:text="关注"
+                android:textColor="@color/whiteColor" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- 界面布局文件 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>

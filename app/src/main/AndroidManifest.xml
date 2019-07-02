@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.superslidelayout">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_slide"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_slide"
+        android:supportsRtl="true"
+        android:theme="@style/SlideTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 侧滑结束的activity -->
+        <activity android:name=".sample.basis.ViewPagerActivity" />
+        <activity android:name=".sample.basis.ListViewActivity" />
+        <activity android:name=".sample.basis.RecyclerActivity" />
+        <activity android:name=".sample.basis.ScrollViewActivity" />
+        <activity android:name=".sample.basis.HScrollViewActivity" />
+        <activity android:name=".sample.basis.WebviewActivity" />
+        <activity android:name=".sample.basis.TablayoutActivity" />
+        <activity android:name=".sample.basis.DrawerActivity" />
+        <activity android:name=".sample.basis.CoordinatorActivity" />
+
+        <!-- 特殊样式的activity -->
+        <activity android:name=".sample.special.GalleryActivity" />
+        <activity android:name=".sample.special.CommentActivity" />
+        <activity android:name=".sample.special.VideoDetailActivity" />
+        <activity android:name=".sample.special.ShareElementActivity" />
+        <activity android:name=".sample.basis.GridActivity" />
+        <activity android:name=".sample.special.SingleImgActivity" />
+        <activity android:name=".sample.basis.TestActivity" />
+        <activity android:name=".sample.special.FullScreenDialogActivity"></activity>
+    </application>
+
+</manifest>

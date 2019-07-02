@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right|left"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到viewpager" />
+
+    <Button
+        android:id="@+id/btn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到ListView" />
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到GridView" />
+
+    <Button
+        android:id="@+id/btn_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到RecyclerView" />
+
+    <Button
+        android:id="@+id/btn_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到ScrollView" />
+
+    <Button
+        android:id="@+id/btn_hscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到水平ScrollView" />
+
+    <Button
+        android:id="@+id/btn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到Webview" />
+
+
+    <Button
+        android:id="@+id/btn_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到tablayout" />
+
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到Drawer" />
+
+
+    <Button
+        android:id="@+id/btn_coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到CoordinatorLayout" />
+
+
+</LinearLayout>

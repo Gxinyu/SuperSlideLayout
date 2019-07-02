@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.superslidelayout.widget.ImmersiveLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.example.superslide.SuperSlideLayout
+        android:id="@+id/super_slideview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackColor"
+        android:foreground="@color/transprent"
+        app:ssl_alphaEnable="true"
+        app:ssl_alphaRate="0.1"
+        app:ssl_multiPointer="true"
+        app:ssl_overflowParent="true"
+        app:ssl_scaleEnable="false"
+        app:ssl_singleDirection="true"
+        app:ssl_slideEdge="top|bottom"
+        app:ssl_thresholdRate="0.2">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.example.superslide.SuperSlideLayout>
+
+
+    <!--这部分是作为其他不滑动的内容-->
+    <RelativeLayout
+        android:id="@+id/ll_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="诸子百家"
+            android:textColor="@color/whiteColor"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_red"
+            android:paddingBottom="4dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="4dp"
+            android:text="关注"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/slide_bakground_color"
+            android:gravity="center"
+            android:paddingBottom="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="远山微暮，田寂园嬉。炊烟袅袅，犬鸣幼啼。其室虽陋，其乐悠悠。此去今年，此生难寻。乡音凄凄，如我梦兮。断烛弋弋，乱我魂兮。琴声瑟瑟，孤影和吟。渺渺归途，虽死犹去。"
+            android:textColor="@color/whiteColor"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</com.example.superslidelayout.widget.ImmersiveLayout>

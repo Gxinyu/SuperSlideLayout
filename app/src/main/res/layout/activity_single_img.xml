@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.superslide.SuperSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/super_slideview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackColor"
+    android:fitsSystemWindows="true"
+    android:foreground="@color/transprent"
+    app:ssl_alphaEnable="true"
+    app:ssl_alphaRate="0.5"
+    app:ssl_checkThreshold="false"
+    app:ssl_overflowParent="true"
+    app:ssl_scaleEnable="true"
+    app:ssl_scaleRate="0.7"
+    app:ssl_singleDirection="false"
+    app:ssl_slideEdge="top|bottom|left|right"
+    app:ssl_thresholdRate="0.2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/image2"
+        android:transitionName="single" />
+
+</com.example.superslide.SuperSlideLayout>

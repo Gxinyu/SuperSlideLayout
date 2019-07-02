@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ImmersiveTheme" parent="@style/AppTheme.NoActionBar">
+        <!--透明导航栏-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--Required-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Slide_From_Right</item>
+    </style>
+
+    <style name="ImmersiveTheme2" parent="@style/AppTheme.NoActionBar">
+        <!--透明导航栏-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--Required-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Slide_From_Bottom</item>
+    </style>
+
+    <!--附带过渡动画-->
+    <style name="ImmersiveTransitionTheme" parent="ImmersiveTheme">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+</resources>

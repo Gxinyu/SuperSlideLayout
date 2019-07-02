@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.superslide.SuperSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/super_slideview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:fitsSystemWindows="true"
+    android:foreground="@color/transprent"
+    app:ssl_alphaEnable="true"
+    app:ssl_alphaRate="0.1"
+    app:ssl_checkThreshold="false"
+    app:ssl_multiPointer="true"
+    app:ssl_overflowParent="true"
+    app:ssl_scaleEnable="false"
+    app:ssl_singleDirection="false"
+    app:ssl_slideEdge="top|left|right"
+    app:ssl_thresholdRate="0.2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/image3"
+            android:transitionName="video" />
+
+        <LinearLayout
+            android:id="@+id/ll_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--跟随滚动并且不折叠-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/cbchot_242134"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:text="秦时明月之百步飞剑"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/shape_red"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:paddingTop="4dp"
+                    android:text="关注"
+                    android:textColor="@color/whiteColor" />
+
+            </LinearLayout>
+
+            <!--界面布局文件 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.example.superslide.SuperSlideLayout>

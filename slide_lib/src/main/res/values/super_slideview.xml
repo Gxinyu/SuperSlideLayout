@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SuperSlideLayout">
+        <!--是否禁止滑动-->
+        <attr name="ssl_slideEnable" format="boolean" />
+        <!--边缘-->
+        <attr name="ssl_slideEdge" format="integer">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <!--结束的比例-->
+        <attr name="ssl_thresholdRate" format="float" />
+        <!--监测阀值-->
+        <attr name="ssl_checkThreshold" format="boolean" />
+        <!--缩放-->
+        <attr name="ssl_scaleEnable" format="boolean" />
+        <attr name="ssl_scaleRate" format="float" />
+        <attr name="ssl_minScale" format="float" />
+        <!--背景透明-->
+        <attr name="ssl_alphaEnable" format="boolean" />
+        <attr name="ssl_alphaRate" format="float" />
+        <attr name="ssl_minAlpha" format="float" />
+        <!--是否溢出父类-->
+        <attr name="ssl_overflowParent" format="boolean" />
+        <!--是否单方向-->
+        <attr name="ssl_singleDirection" format="boolean" />
+        <!--多点触摸-->
+        <attr name="ssl_multiPointer" format="boolean" />
+        <!--滚动时间-->
+        <attr name="ssl_scrollTime" format="integer" />
+        <!--系统栏-->
+        <attr name="ssl_statusBarBackground" format="reference" />
+
+    </declare-styleable>
+
+</resources>
