@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/slide_bakground_color"
-    app:ssl_alphaEnable="true"
     android:fitsSystemWindows="false"
+    app:ssl_alphaEnable="true"
     app:ssl_multiPointer="true"
     app:ssl_overflowParent="false"
     app:ssl_singleDirection="true"
-    app:ssl_slideEdge="top"
+    app:ssl_slideEdge="left|top"
     app:ssl_thresholdRate="0.3">
 
     <LinearLayout
